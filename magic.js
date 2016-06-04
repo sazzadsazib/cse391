@@ -65,7 +65,7 @@ function Reverse() {
   var r = document.getElementById("Main").value;
   var arr = r.split("\n");
   var str = "";
-  for (var i = arr.length - 1; i >= 0; i--) {
+  for (var i = 0; i <=arr.length - 1; i++) {
     var str2="";
     var charr = arr[i].split('');
 
@@ -74,7 +74,7 @@ function Reverse() {
         str2=str2+charr[j];
         console.log(str2);
       }
-      str = str + str2;
+      str = str + str2+"\n";
     }else {
        for (var j = charr.length - 1; j >= 0; j--) {
         str2=str2+charr[j];
